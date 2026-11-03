@@ -1,5 +1,13 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Turtle Munch</title>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>JISNEX Turtle Munch</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#050b1c">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Turtle Munch">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#050b1c;--fg:#fff;--ac:#ffd23f;color-scheme:dark}
@@ -331,4 +339,5 @@ q('#hOut').onclick=()=>{ls.d(S);open_()};
 const t=ls.g(S);
 if(t&&USERS.some(u=>tok(u[0],u[1])===t))A.style.display='none';else open_();
 })();
-</script></body></html>
+</script><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>
+</body></html>
